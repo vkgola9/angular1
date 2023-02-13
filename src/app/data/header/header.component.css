@@ -1,0 +1,7 @@
+.search input[type=text] {
+    outline: none;
+    border-radius: 10%;
+    width: 20%;
+    height: 5%;
+    background-color: gery;
+}

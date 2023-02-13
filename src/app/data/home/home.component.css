@@ -1,0 +1,20 @@
+.top.stick {
+    right: 4%;
+    bottom: 4%;
+    z-index: 10;
+    display: inline-block;
+    position: fixed;
+    animation: top 400ms linear;
+}
+
+@keyframes top {
+    0% {
+        transform: translateX(50px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}

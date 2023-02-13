@@ -1,0 +1,70 @@
+<footer class="py-5 px-3 px-md-0" data-aos-once="true" data-aos="fade-up">
+    <div class="container">
+        <div class="row text-white gap-4 gap-md-0">
+            <div class="col-sm-6 col-lg-3">
+                <p class="h3 mb-md-4">Get In Touch</p>
+                <p class="text-warning text-capitalize mb-3 fs-2 fw-bold"><i class="fa-solid fa-car text-white "></i> drivo.</p>
+                <p class="mb-1"><i class="fa-solid fa-location-dot"></i> &nbsp;&nbsp;44/3 Belu, New Delhi, INDIA</p>
+                <p class="mb-1"><a href="tel:+917532046645" class="text-decoration-none link-light"><i class="fa-solid fa-phone"></i> &nbsp;+91 75320 46645</a></p>
+                <p class="mb-1"><a href="mailto:vkgola9@gmail.com" class="text-decoration-none link-light"><i class="fa-solid fa-envelope"></i> &nbsp;vkgola9@gmail.com</a></p>
+                <p class="mb-1"></p>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="h3 mb-md-4">Quick Links</p>
+                <div class="pt-2">
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="about" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">about us</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="contact" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">contact us</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="index" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">news services</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="assets/documents/terms and condition.pdf" target="_blank" class="text-decoration-none text-capitalize link-footer">terms &amp; conditions</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" class="text-decoration-none text-capitalize link-footer" data-bs-toggle="modal" data-bs-target="#exampleModal">support</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="h3 mb-md-4">Popular Links</p>
+                <div class="pt-2">
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="about" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">about us</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="contact" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">contact us</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" routerLink="index" routerLinkActive="active" class="text-decoration-none text-capitalize link-footer">news services</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="assets/documents/terms and condition.pdf" target="_blank" class="text-decoration-none text-capitalize link-footer">terms &amp; conditions</a></p>
+                    <p class="mb-1"><small>&gt;</small> &nbsp;<a href="javascript:void(0);" class="text-decoration-none text-capitalize link-footer" data-bs-toggle="modal" data-bs-target="#exampleModal">support</a></p>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <p class="h3 mb-md-4">Newsletters</p>
+                <div class="pt-2">
+                    <form action="" [formGroup]="reactiveForm" (ngSubmit)="reactSubmit()">
+                        <p class="input-group mb-1">
+                            <input type="text" class="outline-none rounded-0 form-control" placeholder="Your Email Address" id="subscribe" formControlName="subscribe">
+                            <input class="btn btn-warning text-white py-3 rounded-0" type="submit" [disabled]="!reactiveForm.valid" id="button-addon2" value="Sign Up">
+                        </p>
+                        <div class="text-danger text-capitalize" *ngIf="f['subscribe'].touched && f['subscribe'].invalid">
+                            <p *ngIf="f['subscribe'].errors && f['subscribe'].errors['required']"> *please add some value here </p>
+                            <p *ngIf="f['subscribe'].errors && f['subscribe'].errors['minlength']"> *not an email</p>
+                            <p *ngIf="f['subscribe'].errors && f['subscribe'].errors['pattern']"> *invalid pattern </p>
+                        </div>
+                    </form>
+                    <p class="my-3">Follow Us </p>
+                    <div class="d-flex">
+                        <a href="https://www.twitter.com" target="_blank" class="btn rounded-0 mx-1 btn-outline-light fa-brands fa-twitter"></a>
+                        <a href="https://www.facebook.com" target="_blank" class="btn rounded-0 mx-1 btn-outline-light fa-brands fa-facebook-f"></a>
+                        <a href="https://www.youtube.com" target="_blank" class="btn rounded-0 mx-1 btn-outline-light fa-brands fa-youtube"></a>
+                        <a href="https://www.linkedin.com" target="_blank" class="btn rounded-0 mx-1 btn-outline-light fa-brands fa-linkedin-in"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="bottom-bar py-4 py-md-3 text-center">
+    <div class="container">
+        <div class="row text-white text-center">
+            <div class="col-md-6 d-md-flex align-items-center text-center text-md-start">
+                &copy;opyright <a href="#" routerLink="home" class="text-decoration-none link-warning"> &nbsp;Drivo.&nbsp;</a> 2017–2023, All rights reserved.
+            </div>
+            <div class="col-md-6 text-md-end">
+                <p class="m-0">Designed By <a href="javascript:void(0);" class="link-warning text-decoration-none" data-bs-toggle="tooltip" data-bs-title="vinay GOLA &amp; deepak BISHT" title="GO = gola &amp; BI = bisht">GOBI Brothers</a></p>
+                <p class="m-0">Distributed By: <a href="javascript:void(0);" class="link-warning text-decoration-none" data-bs-toggle="tooltip" data-bs-title="vinay GOLA &amp; deepak BISHT" title="GO = gola &amp; BI = bisht">GOBI services pvt. limited</a> </p>
+            </div>
+        </div>
+    </div>
+</div>

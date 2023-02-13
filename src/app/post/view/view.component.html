@@ -1,0 +1,38 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a href="#" routerLink="/post/index" class=" btn btn-sm btn-primary mt-5">back</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <div class="table-responsive pt-1">
+                <table class="table table-bordered">
+                    <thead>
+                        <tr class="table-primary text-uppercase">
+                            <th>id</th>
+                            <th>firstName</th>
+                            <th>lastName</th>
+                            <th>email</th>
+                            <th>contactNumber</th>
+                            <th>age</th>
+                            <th>address</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{post.id}}</td>
+                            <td>{{post.firstName}}</td>
+                            <td>{{post.lastName}}</td>
+                            <td>{{post.email}}</td>
+                            <td>{{post.contactNumber}}</td>
+                            <td>{{post.age}}</td>
+                            <td>{{post.address}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</div>

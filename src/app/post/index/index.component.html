@@ -1,0 +1,58 @@
+<!-- --------users/client -----------users/client -----------users/client -----------users/client ---------------- -->
+<div class="whatsapp">
+    <a href="https://wa.me/917532046645?text=hello%20%2C%20thanks%20for%20coming%20to%20DRiVO." target="_blank"> <img src="assets/images/whatsapp.png" alt="whatsapp" class="position-fixed z-index-20 bottom-0 ms-4 mb-4" style="width: 3rem;"></a>
+</div>
+<div class="px-2">
+    <div class="meet-team pt-5">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row" data-aos-once="false" data-aos="fade-up" data-aos-easing="ease">
+                    <div class="col-lg-7 text-lg-center m-auto">
+                        <h6 class="text-uppercase fw-600 text-warning"> meet our users </h6>
+                        <h1 class="text-capitalize fw-bold">meet our satisfied clients who used our service </h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a href="#" routerLink="/post/create" class="btn btn-primary btn-sm">add new user here </a>
+    <div class="table-responsive px-1 pt-2">
+        <table class=" table table-hover table-bordered border-secondary">
+            <thead>
+                <tr class="text-uppercase table-primary">
+                    <th>id</th>
+                    <th>firstName</th>
+                    <th>lastName</th>
+                    <th>email</th>
+                    <th>contactNumber</th>
+                    <th>age</th>
+                    <th>address</th>
+                    <th>request</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of Posts | paginate:{itemsPerPage:15,currentPage:p,totalItems:total}">
+                    <td class="table-secondary" scope="col">{{post.id}}</td>
+                    <td scope="col">{{post.firstName}}</td>
+                    <td scope="col">{{post.lastName}}</td>
+                    <td scope="col">{{post.email}}</td>
+                    <td scope="col">{{post.contactNumber}}</td>
+                    <td scope="col">{{post.age}}</td>
+                    <td scope="col">{{post.address}}</td>
+                    <td scope="col">
+                        <!-- <a href=""  class="btn btn-info"  [routerLink]="['/post/',post.id,'view' ]"> view</a> -->
+                        <a class="fa fa-eye link-info h4 text-decoration-none scale" aria-hidden="true" [routerLink]="['/post/',post.id,'view' ]" title="View"></a>
+                        <!-- <a href=""  class="btn btn-primary mx-3" [routerLink]="['/post/','edit' ]"> edit</a> -->
+                        <a class="fa fa-pencil link-primary h4 mx-3 text-decoration-none scale" [routerLink]="['/post/',post.id,'edit' ]" aria-hidden="true" title="Edit"></a>
+                        <!-- <button (click)="deleteData(post.id)" class="btn btn-danger"> delete</button> -->
+                        <a class="fa fa-trash link-danger h4 text-decoration-none scale" aria-hidden="true" (click)="deleteData(post.id)" title="Delete"></a>
+                    </td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+    <div class="mb-5"> <pagination-controls class="text-center" (pageChange)="pageChange($event)"></pagination-controls></div>
+</div>

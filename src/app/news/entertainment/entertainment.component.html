@@ -1,0 +1,69 @@
+<div class="container-fluid mt-3">
+    <div class="row">
+        <div class="col d-flex justify-content-between align-items-center">
+            <a href="#" routerLink="/news/index" class="btn btn-sm btn-primary">back</a>
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid p-0">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" routerLink="/news/general" routerLinkActive="active">gereral</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" routerLink="/news/sports" routerLinkActive="active">sports</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" routerLink="/news/entertainment" routerLinkActive="active">entertainment</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" routerLink="/news/science" routerLinkActive="active">science</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" routerLink="/news/technology" routerLinkActive="active">technology</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" [routerLink]="['/news/business']" routerLinkActive="active">business</a>
+                            </li>
+                            <li class="nav-item text-capitalize">
+                                <a class="nav-link" href="#" [routerLink]="['/news/health']" routerLinkActive="active">health</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <div class="d-none d-md-block">
+                <label for="news">Country:</label>
+                <select name="news" id="news" class="country bg-light text-uppercase" #news>
+                    <option value="in" class="bg-light">india</option>
+                    <option value="cn" class="bg-light">china</option>
+                    <option value="sg" class="bg-light">singapore</option>
+                    <option value="jp" class="bg-light">japan</option>
+                    <option value="ca" class="bg-light">canada</option>
+                </select>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="container mt-5 pt-5">
+    <div class="row">
+        <div class="col-12 col-md-4 mb-3 mt-0" *ngFor="let data of topHeadlinesData">
+            <div class="card box bg-light">
+                <div class="card-header">
+                    <img class="card-img-top" src="{{data.urlToImage}}" alt="failed-to-load-image">
+                </div>
+                <div class="card-body">
+                    <h4 class="card-title h5 fw-bold">{{data.title |short:40}}</h4>
+                    <p class="card-title fw-light">{{data.description |short:71}}</p>
+                    <a href="{{data.url}}" target="_blank" class="btn btn-sm btn-dark text-small text-capitalize">read more...</a>
+                </div>
+                <div class="card-footer">
+                    <p class="card-text">{{data.publishedAt}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

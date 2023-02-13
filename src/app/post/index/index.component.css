@@ -1,0 +1,26 @@
+.scale:hover {
+    animation: icon 2s linear infinite;
+    cursor: pointer;
+}
+
+@keyframes icon {
+    0% {
+        transform: rotate(-60deg);
+    }
+
+    50% {
+        transform: rotate(50deg);
+    }
+
+    100% {
+        transform: rotate(-60deg);
+    }
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #e8b421;
+    color: #fefefe;
+    cursor: default;
+    border-radius: 50%;
+}

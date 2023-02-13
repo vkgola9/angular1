@@ -1,0 +1,116 @@
+<!-- appointment-banner ------- -->
+<div class="apponintment-banner pb-5">
+    <div class="container-fluid about-bg py-5">
+        <div class="container py-5">
+            <div class="row">
+                <div class="d-flex align-items-center justify-content-center">
+                    <p class="display-3 fw-600 text-capitalize text-white">contact us </p>
+                </div>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb justify-content-center">
+                        <li class="breadcrumb-item"><a href="javascript:void(0);" routerLink="home" class="text-decoration-none link-light">Home</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);" routerLink="courses" class="text-decoration-none link-light">Courses</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0);" class="text-decoration-none text-warning">contact</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- appointment-banner--end-- --- -->
+<!-- --------appointment start---------------- -->
+<div class="appointment py-5">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row gx-5">
+                <div class="col-lg-6 flex-wrap" data-aos-once="false" data-aos="fade-up" data-aos-easing="ease">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d7859.360369095982!2d77.31447674895678!3d28.661303672619642!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1668861556080!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-lg-6 mt-5 mt-md-0" data-aos-once="false" data-aos="fade-up" data-aos-delay="250">
+                    <div id="appoint" class="appoint" data-aos-once="false" data-aos="fade-up" data-aos-easing="ease">
+                        <div class="container">
+                            <div class="row">
+                                <div class="m-auto col-12">
+                                    <form action="response.html" target="_blank" method="get" class="" [formGroup]="reactiveForm" (ngSubmit)="reactSubmit()">
+                                        <div class="col">
+                                            <h6 class="text-uppercase text-warning fw-600"> contact us! </h6>
+                                            <p class="display-6 fw-600 text-capitalize text-dark pb-3">If You Have Any Query, Please Contact Us</p>
+                                            <p class="mt-3">The offline contact form is currently inactive. Get a functional and working contact form with gobi brothers & PHP in a few minutes. Just copy and paste the files, add a little code and you're done.</p>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control bg-light shadow" id="floatingInput" formControlName="floatingInput" placeholder="name@example.com" required>
+                                                    <label class="text-capitalize text-muted" for="floatingInput">first name</label>
+                                                    <div class="text-danger text-capitalize" *ngIf="f['floatingInput'].touched && f['floatingInput'].invalid">
+                                                        <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['required']"> please add some value here </p>
+                                                        <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['minlength']"> please add minimum 6 letters </p>
+                                                        <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['pattern']"> please enter right pattern </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-2 mb-lg-0">
+                                                <div class="form-floating">
+                                                    <input type="text" class="form-control bg-light shadow" id="floatingPassword" formControlName="floatingPassword" placeholder="Password" required>
+                                                    <label class="text-capitalize text-muted" for="floatingPassword">last name</label>
+                                                    <div class="text-danger text-capitalize" *ngIf="f['floatingPassword'].touched && f['floatingPassword'].invalid">
+                                                        <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['required']"> please add some value here </p>
+                                                        <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['minlength']"> please add minimum 6 letters </p>
+                                                        <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['pattern']"> please enter right pattern </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mb-2">
+                                            <div class="col-12 col-md-6">
+                                                <div class="form-floating mb-3">
+                                                    <input type="text" class="form-control bg-light shadow" id="floatingInput1" formControlName="floatingInput1" placeholder="name@example.com" required>
+                                                    <label class="text-capitalize text-muted" for="floatingInput">business/personal</label>
+                                                    <div class="text-danger text-capitalize" *ngIf="f['floatingInput1'].touched && f['floatingInput1'].invalid">
+                                                        <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['required']"> please add some value here </p>
+                                                        <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['minlength']"> please add minimum 6 letters </p>
+                                                        <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['pattern']"> please enter right pattern </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 col-md-6 mb-2 mb-lg-0">
+                                                <div class="form-floating">
+                                                    <input type="email" class="form-control bg-light shadow" id="floatingPassword1" formControlName="floatingPassword1" placeholder="Password" required>
+                                                    <label class="text-capitalize text-muted" for="floatingPassword">email</label>
+                                                    <div class="text-danger text-capitalize" *ngIf="f['floatingPassword1'].touched && f['floatingPassword1'].invalid">
+                                                        <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['required']"> please add some value here </p>
+                                                        <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['minlength']"> please add minimum 6 letters </p>
+                                                        <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['pattern']"> please enter right pattern </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <div class="form-floating">
+                                                    <textarea class="form-control h-100 bg-light shadow" placeholder="Leave a comment here" id="floatingTextarea" formControlName="floatingTextarea" cols="25" rows="5"></textarea>
+                                                    <label class="text-capitalize text-muted" for="floatingTextarea">message</label>
+                                                    <div class="text-danger text-capitalize" *ngIf="f['floatingTextarea'].touched && f['floatingTextarea'].invalid">
+                                                        <p *ngIf="f['floatingTextarea'].errors && f['floatingTextarea'].errors['required']"> please add some value here </p>
+                                                        <p *ngIf="f['floatingTextarea'].errors && f['floatingTextarea'].errors['minlength']"> please add minimum 6 letters </p>
+                                                        <p *ngIf="f['floatingTextarea'].errors && f['floatingTextarea'].errors['pattern']"> please enter right pattern </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row m-0 mt-3">
+                                            <div class="col p-0 g-3">
+                                                <input type="submit" [disabled]="!reactiveForm.valid" class="btn btn-dark py-3 w-100 text-capitalize" value="send message">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- --------appointment--end---------------- -->

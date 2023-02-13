@@ -1,0 +1,78 @@
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <a href="#" routerLink="/post/index" class=" btn btn-sm btn-primary mt-5">back</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12 col-md-7 m-auto mb-5">
+            <form action="" method="post" [formGroup]="form" (ngSubmit)="submit()" class="border border-3 rounded-1 border-warning shadow-lg p-4">
+                <div class="row">
+                    <div class="col">
+                        <p class="text-center text-capitalize h3 fw-bold shadow-sm">create new entry</p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="firstName" class="form-label">first name</label>
+                        <input type="text" class="form-control" id="firstName" formControlName="firstName">
+                        <div class="text-danger text-capitalize" *ngIf="f['firstName'].touched && f['firstName'].invalid">
+                            <p class="m-0" *ngIf="f['firstName'].errors && f['firstName'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['firstName'].errors && f['firstName'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['firstName'].errors && f['firstName'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="lastName" class="form-label">last name</label>
+                        <input type="text" class="form-control" id=" lastName" formControlName="lastName">
+                        <div class="text-danger text-capitalize" *ngIf="f['lastName'].touched && f['lastName'].invalid">
+                            <p class="m-0" *ngIf="f['lastName'].errors && f['lastName'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['lastName'].errors && f['lastName'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['lastName'].errors && f['lastName'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="email" class="form-label">email</label>
+                        <input type="text" class="form-control" id="email" formControlName="email">
+                        <div class="text-danger text-capitalize" *ngIf="f['email'].touched && f['email'].invalid">
+                            <p class="m-0" *ngIf="f['email'].errors && f['email'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['email'].errors && f['email'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['email'].errors && f['email'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="contactNumber" class="form-label">contact Number</label>
+                        <input type="text" class="form-control" id="contactNumber" formControlName="contactNumber">
+                        <div class="text-danger text-capitalize" *ngIf="f['contactNumber'].touched && f['contactNumber'].invalid">
+                            <p class="m-0" *ngIf="f['contactNumber'].errors && f['contactNumber'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['contactNumber'].errors && f['contactNumber'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['contactNumber'].errors && f['contactNumber'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="age" class="form-label">Age</label>
+                        <input type="text" class="form-control" id="age" formControlName="age">
+                        <div class="text-danger text-capitalize" *ngIf="f['age'].touched && f['age'].invalid">
+                            <p class="m-0" *ngIf="f['age'].errors && f['age'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['age'].errors && f['age'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['age'].errors && f['age'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3 col-12 col-md-6">
+                        <label for="address" class="form-label">Address</label>
+                        <input type="text" class="form-control" id="address" formControlName="address">
+                        <div class="text-danger text-capitalize" *ngIf="f['address'].touched && f['address'].invalid">
+                            <p class="m-0" *ngIf="f['address'].errors && f['address'].errors['required']"> *please add some value here </p>
+                            <p class="m-0" *ngIf="f['address'].errors && f['address'].errors['pattern']"> *invalid pattern</p>
+                            <p class="m-0" *ngIf="f['address'].errors && f['address'].errors['minlength']"> *please add minimum 3 letters </p>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <input type="submit" class="form-control btn btn-primary" value="submit" [disabled]="!form.valid">
+
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+img {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+}
+
+img {
+    /* width: 50%;
+    height: 50%; */
+    transition: all .2s linear;
+}
+
+img:hover {
+    box-shadow: 5px 5px 5px 5px var(--yellow), -5px -5px 5px 5px var(--yellow);
+    transform: scale(1.1);
+}

@@ -1,0 +1,228 @@
+<header id="top1">
+    <div class="topbar d-none d-lg-inline">
+        <div class="container-fliud text-bg-dark">
+            <div class="container-fliud">
+                <div class="row py-2 px-3 g-0">
+                    <div class="col-6">
+                        <p class="d-inline me-3"><small><i class="text-warning fa-solid fa-location-dot"></i>&nbsp; 44/3 Belu, New Delhi, INDIA </small></p>
+                        <p class="d-inline"><small> <i class="text-warning fa-regular fa-clock"></i> &nbsp; Mon - Fri : 09.00 AM - 09.00 PM</small></p>
+                    </div>
+                    <div class="col-6">
+                        <div class="text-end">
+                            <form method="post" class="d-inline search" *ngIf=" display"><input type="text" placeholder="search here..."></form>
+                            <p class="d-inline"> <small> <i (click)="toggle()" class="btn link-warning border-end border-end-warning rounded-0 pe-3 fa-solid fa-magnifying-glass opacity1 me-auto"></i></small></p>
+                            <p class="d-inline mx-2"> <small> <i class="fa-solid fa-phone text-warning"></i> &nbsp; <a href="tel:+917532046645" class="opacity1 text-decoration-none text-white">+91 7532046645</a> </small></p>
+                            <p class="d-inline"> <small> <a href="https://www.facebook.com" target="_blank"><i class="btn opacity1 link-warning border-end border-start border-end-warning rounded-0 fa-brands fa-facebook-f"></i></a></small></p>
+                            <p class="d-inline"> <small> <a href="https://www.twitter.com" target="_blank"><i class="btn opacity1 link-warning border-end border-end-warning rounded-0 fa-brands fa-twitter"></i></a></small></p>
+                            <p class="d-inline"> <small> <a href="https://www.linkedin.com" target="_blank"><i class="btn opacity1 link-warning border-end border-end-warning rounded-0 fa-brands fa-linkedin-in"></i></a></small></p>
+                            <p class="d-inline"> <small> <a href="https://www.instagram.com" target="_blank"><i class="btn opacity1 link-warning rounded-0 fa-brands fa-instagram"></i></a></small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- small device top bar -->
+    <div class="topbar d-lg-none">
+        <div class="container-fliud text-bg-dark">
+            <div class="row py-1 mx-2">
+                <div class="col p-0">
+                    <div class="text-start">
+                        <p class="d-inline"> <small> <a href="https://www.facebook.com" target="_blank"><i class="btn opacity1 link-warning border-end border-end-warning rounded-0 fa-brands fa-facebook-f"></i></a></small></p>
+                        <p class="d-inline"> <small> <a href="https://www.twitter.com" target="_blank"><i class="btn opacity1 link-warning border-end border-end-warning rounded-0 fa-brands fa-twitter"></i></a></small></p>
+                        <p class="d-inline"> <small> <a href="https://www.linkedin.com" target="_blank"><i class="btn opacity1 link-warning border-end border-end-warning rounded-0 fa-brands fa-linkedin-in"></i></a></small></p>
+                        <p class="d-inline"> <small> <a href="https://www.instagram.com" target="_blank"><i class="btn opacity1 link-warning rounded-0 fa-brands fa-instagram"></i></a></small></p>
+                    </div>
+                </div>
+                <div class="col p-0 me-2 flex-wrap">
+                    <div class="text-end">
+                        <form method="post" class="d-inline search" *ngIf=" display"><input type="text" placeholder="search here..."></form>
+                        <p class="d-inline"> <small> <i (click)="toggle()" class="btn link-warning border-end border-end-warning rounded-0 pe-3 fa-solid fa-magnifying-glass opacity1 me-auto"></i></small></p>
+                        <p class="d-inline" data-bs-target="#login" data-bs-toggle="modal"> <small> <i class="transparent text rounded-0 px-2 py-2 ms-2 fa-solid fa-user-plus font-10">login</i></small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- search dropdown -->
+    <!-- search dropdown -->
+    <!-- navbar- start------------------------->
+    <nav class="navbar navbar-expand-md py-2 py-md-0 shadow-lg">
+        <a class="navbar-brand text-capitalize fs-2 fw-bold border-end my-0 px-5 p-0" href="#" routerLink="home" routerLinkActive="active"><i class="fa-solid fa-car text-warning "></i> <span class="text-warning text-uppercase">&nbsp;drivo.</span></a>
+        <button class="navbar-toggler d-lg-none me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse ps-5" id="collapsibleNavId">
+            <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase me-3 fw-600 text" href="javascript:void(0);" routerLink="home" outerLinkActive="active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase me-3 fw-600 text" href="javascript:void(0);" routerLink="about" routerLinkActive="active">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-uppercase me-3 fw-600 active" href="javascript:void(0);" routerLink="courses" routerLinkActive="active">courses</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-uppercase me-3 fw-600 text" href="#" role="button" data-bs-target="#dropdown1" data-bs-toggle="dropdown" aria-expanded="false">
+                        pages
+                    </a>
+                    <ul class="dropdown-menu bg-light w-50" id="dropdown1">
+                        <li><a class="dropdown-item text-uppercase" href="javascript:void(0);" routerLink="features" routerLinkActive="active">features</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="javascript:void(0);" routerLink="appointment" routerLinkActive="active">Appointment</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="javascript:void(0);" routerLink="post" routerLinkActive="active">our clients</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="javascript:void(0);" routerLink="testimonial" routerLinkActive="active">testimonial</a></li>
+                        <li><a class="dropdown-item text-uppercase" href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#exampleModal">Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item"><a class="nav-link text-uppercase me-3 fw-600 text" href="javascript:void(0);" routerLink="contact" routerLinkActive="active">contact</a></li>
+            </ul>
+            <a class="text-decoration-none text-uppercase py-4 px-lg-5 d-none d-lg-block fw-600 transparent" data-bs-target="#login" data-bs-toggle="modal"><i class="fa-solid fa-user-plus"></i> login</a>
+        </div>
+    </nav>
+    <!-- navbar--end---- -->
+    <!-- login=modal=start -->
+    <div class="modal fade" id="login" aria-expanded="true" index="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login-logo d-flex align-items-center justify-content-center">
+                        <img class="shadow-lg rounded-circle bg-success" src="assets/images/login.png" alt="login">
+                    </div>
+                    <div class="mt-5">
+                        <form action="https://parivahan.gov.in/parivahan/en/content/driving-licence-0" target="_blank">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" required />
+                                <label for="floatingInput">User name</label>
+                            </div>
+                            <div class="form-floating">
+                                <input type="password" class="form-control" id="floatingPassword" placeholder="Password" required />
+                                <label for="floatingPassword">Password</label>
+                            </div>
+                            <input type="submit" class="btn btn-success rounded-0 w-100 mt-3 py-3" value="Login">
+                        </form>
+                        <div class="m-2 d-flex align-items-center justify-content-between">
+                            <p class="m-0"><input type="checkbox" checked="checked" name="remember"> Remember me</p>
+                            <p class="m-0">forgot <a class=" text-danger" href="javascript:void(0);" data-bs-target="#forgot" data-bs-toggle="modal">password?</a></p>
+                        </div>
+                        <div class="text-end text-capitalize">new user <a href="javascript:void(0);" routerLink="signup" routerLinkActive="active" class="link-success" target="new">sign up</a> here!</div>
+                    </div>
+
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <p class="text-muted">&copy; 2017–2022, All right reserved.</p>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- login=modal=end -->
+    <!-- forgot=modal=start -->
+    <div class="modal fade" id="forgot" aria-expanded="true" index="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="login-logo d-flex align-items-center justify-content-center">
+                        <img class="shadow-lg rounded-circle bg-success" src="assets/images/login.png" alt="login">
+                    </div>
+                    <div class="mt-5">
+                        <div class="text-center text-capitalize fs-5 my-3">
+                            enter here your phone number to get otp
+                        </div>
+                        <form action="" method="post" [formGroup]="reactiveForm" (ngSubmit)="reactSubmit()">
+                            <div class="form-floating mb-3">
+                                <input type="text" class="form-control" id="contact" formControlName="contact">
+                                <label for="contact" class="text-capitalize">+91...</label>
+                                <div class="text-danger text-capitalize" *ngIf="f['contact'].touched && f['contact'].invalid">
+                                    <p *ngIf="f['contact'].errors && f['contact'].errors['required']"> *please add some value here </p>
+                                    <p *ngIf="f['contact'].errors && f['contact'].errors['pattern']"> *invalid pattern </p>
+                                </div>
+                            </div>
+                            <input type="submit" class="btn btn-success rounded-0 w-100 mt-3 py-3" value="send">
+                        </form>
+                        <div class="text-end text-capitalize mt-2">old user <a href="javascript:void(0);" class="link-success" data-bs-target="#login" data-bs-toggle="modal">login</a> here!</div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-between">
+                    <p class="text-muted">&copy; 2017–2022, All right reserved.</p>
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- forgot=modal=end -->
+    <!-------------------contact--Modal -start------------------->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <form action="" [formGroup]="reactiveForm" (ngSubmit)="reactSubmit()">
+                    <div class="modal-header bg-warning shadow-sm text-white">
+                        <h1 class="modal-title fs-5 text-capitalize" id="exampleModalLabel"> get instant support</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="floatingInput">
+                            <label class="text-capitalize" for="floatingInput"><i class="fa-solid fa-user"></i> name</label>
+                            <div class="text-danger text-capitalize" *ngIf="f['floatingInput'].touched && f['floatingInput'].invalid">
+                                <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['required']"> *please add some value here </p>
+                                <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['minlength']"> *please add minimum 6 letters </p>
+                                <p *ngIf="f['floatingInput'].errors && f['floatingInput'].errors['pattern']"> *invalid pattern </p>
+                            </div>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" formControlName="floatingInput1" #floatingInput1>
+                            <label class="text-capitalize" for="floatingInput"><i class="fa-solid fa-envelope"></i> email</label>
+                            <div class="text-danger text-capitalize" *ngIf="f['floatingInput1'].touched && f['floatingInput1'].invalid">
+                                <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['required']"> *please add some value here </p>
+                                <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['minlength']"> *please add minimum 6 letters </p>
+                                <p *ngIf="f['floatingInput1'].errors && f['floatingInput1'].errors['pattern']"> *invalid pattern </p>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <input type="text" class="form-control" id="floatingPassword" placeholder="Password" formControlName="floatingPassword">
+                            <label class="text-capitalize" for="floatingPassword"><i class="fa-solid fa-phone"></i> contact no.</label>
+                            <div class="text-danger text-capitalize" *ngIf="f['floatingPassword'].touched && f['floatingPassword'].invalid">
+                                <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['required']"> *please add some value here </p>
+                                <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['minlength']"> *please add minimum 6 letters </p>
+                                <p *ngIf="f['floatingPassword'].errors && f['floatingPassword'].errors['pattern']"> *invalid pattern </p>
+                            </div>
+                        </div>
+                        <div class="form-floating">
+                            <select class="form-select mt-3" id="floatingSelect" aria-label="Floating label select example">
+                                <option selected>Select Location</option>
+                                <option class="text-capitalize" value="1">delhi</option>
+                                <option class="text-capitalize" value="1">delhi-nCR</option>
+                                <option class="text-capitalize" value="2">mumbai</option>
+                                <option class="text-capitalize" value="3">hydrabad</option>
+                                <option class="text-capitalize" value="3">chennai</option>
+                                <option class="text-capitalize" value="3">punjab</option>
+                                <option class="text-capitalize" value="3">rajisthan</option>
+                                <option class="text-capitalize" value="3">punjab</option>
+                            </select>
+                            <label class="text-capitalize" for="floatingSelect"><i class="fa-solid fa-location-arrow"></i> region</label>
+                            <div class="form-floating mt-3">
+                                <input type="text" class="form-control" id="floatingPassword" placeholder="Password" formControlName="floatingPassword1" #floatingPassword1 />
+                                <label class="text-capitalize" for="floatingPassword"><i class="fa-solid fa-car"></i> package</label>
+                                <div class="text-danger text-capitalize" *ngIf="f['floatingPassword1'].touched && f['floatingPassword1'].invalid">
+                                    <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['required']"> *please add some value here </p>
+                                    <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['minlength']"> *please add minimum 6 letters </p>
+                                    <p *ngIf="f['floatingPassword1'].errors && f['floatingPassword1'].errors['pattern']"> *invalid pattern </p>
+                                </div>
+                            </div>
+                            <div class="form-check mt-3">
+                                <label class="form-check-label" for="flexCheckIndeterminate"> Recieve whatsapp messages for latest update. </label>
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <input type="submit" class="btn btn-success" value="Send">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--  ------------------contact--Modal --end------------------>
+</header>
