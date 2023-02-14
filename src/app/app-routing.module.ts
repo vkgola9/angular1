@@ -24,7 +24,7 @@ const routes: Routes = [
   { path: "appointment", title: 'APPOINTMENT', component: AppointmentComponent },
   { path: "signup", title: 'SIGNUP', component: SignupComponent },
   { path: "checkout", title: 'CHECKOUT', component: CheckoutComponent },
-  { path: "**", title: 'PAGENOTFOUND', component: CustomComponent },
+ 
 ];
 
 @NgModule({
