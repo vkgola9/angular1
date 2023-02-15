@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { CustomComponent } from './custom/custom.component';
 import { AboutComponent } from './data/about/about.component';
 import { AppointmentComponent } from './data/appointment/appointment.component';
 import { CheckoutComponent } from './data/checkout/checkout.component';
